@@ -28,7 +28,7 @@
     <string name="touchpad_double_tap_summary">While in camera, double tap to capture image</string>
 
     <!-- Gesture shortcuts -->
-    <string name="screen_gestures_panel_title">OnePlus Gestures</string>
+    <string name="screen_gestures_panel_title">Device extras</string>
     <string name="gestures_dashboard_summary">Gestures specific to OnePlus devices</string>
 
     <string name="touchscreen_double_tap_gesture_title">Wake device</string>
