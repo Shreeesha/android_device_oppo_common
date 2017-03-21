@@ -106,9 +106,9 @@ public class Startup extends BroadcastReceiver {
 
             // Disable button settings if needed
             if (!hasButtonProcs()) {
-                disableComponent(context, ButtonSettings.class.getName());
+                disableComponent(context, TouchscreenGestureSettings.class.getName());
             } else {
-                enableComponent(context, ButtonSettings.class.getName());
+                enableComponent(context, TouchscreenGestureSettings.class.getName());
 
                 // Restore nodes to saved preference values
                 for (String pref : Constants.sButtonPrefKeys) {
@@ -202,8 +202,7 @@ public class Startup extends BroadcastReceiver {
     static boolean hasButtonProcs() {
         return (new File(Constants.NOTIF_SLIDER_TOP_NODE).exists() &&
             new File(Constants.NOTIF_SLIDER_MIDDLE_NODE).exists() &&
-            new File(Constants.NOTIF_SLIDER_BOTTOM_NODE).exists()) ||
-            new File(Constants.BUTTON_SWAP_NODE).exists();
+            new File(Constants.NOTIF_SLIDER_BOTTOM_NODE).exists());
     }
 
     static boolean hasOClick() {
